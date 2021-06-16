@@ -11,6 +11,7 @@
 @import './components/modal.scss';
 @import './components/backdrop.scss';
 @import './components/modal-footer-form.scss';
+@import './components/visuality-hidden-title';
 
 //LAYOUT
 @import './layout/header.scss';
@@ -20,3 +21,5 @@
 @import './layout/team.scss';
 @import './layout/client.scss';
 @import './layout/footer.scss';
+@import './layout/portfolio-filtr';
+@import './layout/portfolio-project';
