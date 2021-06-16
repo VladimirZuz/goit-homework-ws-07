@@ -16,11 +16,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-img-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
 .portfolio-project-item-link:hover .overlay,
 .portfolio-project-item-link:focus .overlay {
   transform: translateY(0%);
@@ -45,6 +40,21 @@
   flex-basis: calc(100% / 3 - 30);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-project-item-link:hover,
+.portfolio-project-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .portfolio-project-item:hover,
