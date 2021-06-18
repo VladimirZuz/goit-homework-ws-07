@@ -2,15 +2,15 @@
   display: flex;
 }
 
-.feature-list-menu:not(:last-child) {
+.feature-list__menu:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-list-menu {
+.feature-list__menu {
   width: 270px;
 }
 
-.sup-title {
+.feature-list__sup-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -19,7 +19,7 @@
   margin-bottom: 10px;
 }
 
-.feature-discription {
+.feature-list__discription {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
@@ -34,10 +34,13 @@
   border-radius: 4px;
 
   height: 120px;
+}
+
+.feature-list__feature-thumb {
   margin-bottom: 30px;
 }
 
-.feature-icon {
+.feature-thumb__icon {
   width: 70px;
   height: 70px;
 }

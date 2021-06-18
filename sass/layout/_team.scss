@@ -52,17 +52,25 @@
   padding-bottom: 16px;
 }
 
-.team-social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-.team-social-list {
+.team-social {
   display: flex;
   justify-content: space-between;
 }
 
-.team-social-list-link {
+.team-social__list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  .team-social__list-link:hover &,
+  .team-social__list-link:focus & {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #ffffff;
+    outline: none;
+  }
+}
+
+.team-social__list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,18 +79,11 @@
   height: 44px;
   background: transparent;
   border-radius: 50%;
-}
 
-.team-social-list-link:hover,
-.team-social-list-link:focus {
-  background-color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
-}
-
-.team-social-list-link:hover .team-social-list-icon,
-.team-social-list-link:focus .team-social-list-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #ffffff;
-  outline: none;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
 }

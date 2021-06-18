@@ -1,7 +1,8 @@
 .job {
   padding-bottom: 94px;
 }
-.job-title {
+
+.job__job-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16x;
@@ -11,12 +12,12 @@
   margin-bottom: 50px;
 }
 
-.job-menu-list {
+.job__menu-list {
   display: flex;
   justify-content: space-between;
 }
 
-.job-div {
+.job__div {
   position: relative;
   bottom: 70px;
 
@@ -29,7 +30,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.job-photo-text {
+.job__photo-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
